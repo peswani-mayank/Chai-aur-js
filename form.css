@@ -1,0 +1,24 @@
+body{
+    background-color: lightblue;
+    color: rgb(79, 75, 75);
+}
+/* form{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: auto;
+} */
+ #form1{
+    background-color: white; 
+    color: black;
+    padding: 30px;
+    border-radius: 5px;
+    width: 350px;
+    margin: auto;
+    border: 2px solid black;
+ }
+ #h1{
+    text-align: center;
+ }
