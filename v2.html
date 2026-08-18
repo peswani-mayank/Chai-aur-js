@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="v2.css">
+</head>
+<body>
+    <!-- height ya width m s ek use krege fr dusra apne ap set hojyega or sath m px likne ki jarurat nhi h agar apn width ya height is im age tag m likh rhe h to px css m likhne ki jarurat h jb hum css k throught height ya width de rhe h to  -->
+    <img src="mayank.jpg" alt="Mayank" height="300"><br>
+
+    <!-- HTML Tables -->
+     <table>
+        <caption>Student Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <!-- isme ek hota h colspan or dusra hota h rowspan colspan ye btata h ki kitni c olumn ko wo occupy krega or rowsopan btata h ki kitne row ko occupy krega -->
+            <td colspan="2">Mayank</td>
+            <!-- <td>25</td> -->
+            <td rowspan="2">New York</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>30</td>
+            <td>Los Angeles</td>
+        </tr>
+     </table>
+     <hr><hr>
+
+     <!-- list in html -->
+      <!-- Customizing Bullet Points with 'type' Attribute
+You can specify the style of bullet points using the type attribute. It supports three values:
+
+disc - default bullet style
+square
+circle -->
+      <h2>unordered list</h2>
+      <ul type="square">
+          <li>Mayank</li>
+          <li>John</li>
+          <li>Jane</li>
+      </ul>
+      <!-- Setting the 'type' Attribute
+The type attribute specifies the style of numbering. You have several options:
+
+Uppercase Roman Numerals: Use type="I"
+Lowercase Roman Numerals: Use type="i"
+Arabic Numerals: Use type="1" (This is the default if the type attribute is not specified)
+Lowercase Alphabetical Letters: Use type="a"
+Uppercase Alphabetical Letters: Use type="A" -->
+        <h2>ordered list</h2>
+        <ol type="i">
+            <li>Mayank</li>
+            <li>John</li>
+            <li>Jane</li>
+        </ol>
+    </body>
+</html>
