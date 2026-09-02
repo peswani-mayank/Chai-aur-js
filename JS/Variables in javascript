@@ -1,0 +1,35 @@
+
+//in this file we will study about variables in javascript
+ const accountId = 12345; //number
+ //const: we cannot redeclare and cannot reassign the value of a const variable
+ let accountEmail="mayank@gmail.com"; //string
+ //let: we can reassign the value of a let variable but cannot redeclare it
+ var accountPassword="12345"; //string
+ //var: we can redeclare and reassign the value of a var variable
+ accountCity="Delhi"; //string
+
+
+ //let accountEmail="mayank@gmail.com"; 
+ // This will cause an error because we cannot redeclare a let variable in the same scope. The error message will be "Uncaught SyntaxError: Identifier 'accountEmail' has already been declared"
+
+
+//  accountId=2;
+//  console.log(accountId); 
+// This will cause an error because we cannot reassign a value to a const variable. The error message will be "Uncaught TypeError: Assignment to constant variable."
+
+
+// let accountState;
+// This will print "undefined" because we have not assigned any value to the variable yet
+
+
+accountEmail="peswani@gmail.com";
+accountPassword="123456";
+console.log(accountEmail); // This will print 
+console.log(accountPassword); // This will print "123456" because we reassigned the value of the var variable
+
+  console.table([accountId, accountEmail, accountPassword, accountCity]); // This will print a table with the values of the variables
+
+
+ //prefer not to use var because it is function scoped and block scope  can lead to unexpected behavior. Use let and const instead, as they are block scoped and provide better control over variable declarations.
+
+
