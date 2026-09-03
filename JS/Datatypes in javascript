@@ -1,0 +1,24 @@
+//in this file we will define the data types that we will use in our tests
+
+"use strict"; //it will treat all JS code in newer version
+
+// javascript ka engine browser m chupa hua h
+
+//number
+//string
+//boolean
+//bigint
+//undefined : ye tb hoga sb apn variable declare kiya h but usko koi value nhi assign ki h 
+//eg. let name; //undefined
+
+//null
+//object: a collection of key value pairs of the data
+//symbol: a unique and primitive identifier
+
+//when we check the type of null variable it will give us object datatype or hull is object. we can also say it is bug in javascript that's why it return objects as datatype of null. null is actually a primitive datatype
+
+
+// to check the type of any variable we can use typeof operator. it will return the datatype of the variable
+
+//eg let name = "John"; //string
+//console.log(typeof name); //string
