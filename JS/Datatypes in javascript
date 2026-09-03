@@ -22,3 +22,37 @@
 
 //eg let name = "John"; //string
 //console.log(typeof name); //string
+
+
+
+//datatype conversion: we can convert one datatype to another datatype using type conversion. there are two types of type conversion: implicit and explicit
+
+let num = 10; //number
+let str = "20"; //string
+ let num1=Number(str); //explicit conversion
+console.log(num1); 
+
+console.log(typeof num1); //number
+
+let num2="33abc"
+console.log(Number(num2)); //NaN: Not a Number
+//because num2 is not proper number so it will return NaN. NaN is a special value in javascript which indicates that the value is not a number. it is also a datatype of number. we can check it by using typeof operator
+console.log(typeof NaN); //number   
+
+
+let score=undefined;//undefined
+console.log(score); 
+
+let score1=null; //null
+console.log(score1);
+
+let isLoggedIn=1; 
+let booleanValue=Boolean(isLoggedIn); 
+console.log(booleanValue); //true
+
+
+//1 => true
+//0=>false
+
+//""=>false  empty string m false dega boolean wale case m
+//"abc"=>true string m true dega boolean wale case m 
