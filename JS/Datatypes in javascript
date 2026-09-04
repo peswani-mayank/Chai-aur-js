@@ -30,25 +30,25 @@
 let num = 10; //number
 let str = "20"; //string
  let num1=Number(str); //explicit conversion
-console.log(num1); 
+//console.log(num1); 
 
-console.log(typeof num1); //number
+//console.log(typeof num1); //number
 
 let num2="33abc"
-console.log(Number(num2)); //NaN: Not a Number
+//console.log(Number(num2)); //NaN: Not a Number
 //because num2 is not proper number so it will return NaN. NaN is a special value in javascript which indicates that the value is not a number. it is also a datatype of number. we can check it by using typeof operator
-console.log(typeof NaN); //number   
+//console.log(typeof NaN); //number   
 
 
 let score=undefined;//undefined
-console.log(score); 
+//console.log(score); 
 
 let score1=null; //null
-console.log(score1);
+//console.log(score1);
 
 let isLoggedIn=1; 
 let booleanValue=Boolean(isLoggedIn); 
-console.log(booleanValue); //true
+//console.log(booleanValue); //true
 
 
 //1 => true
@@ -77,7 +77,8 @@ let userEmail; //undefined
 const id=Symbol("id"); //symbol
 const anotherId=Symbol("id"); //symbol
 
-console.log(id===anotherId); //false
+//console.log(id===anotherId); //false
+
 //because symbol is unique and primitive identifier. it will create a new symbol every time we call it. even if we pass the same description to the symbol function, it will create a new symbol. that's why id and anotherId are not equal.
 
 
@@ -91,8 +92,32 @@ const myObj={
 } //object
 
 const myFunction = function(){
-    console.log("hello world");
+    //console.log("hello world");
 } //function
 
 //arrays, object and function are non-primitive datatypes. they are also called reference datatypes because they store the reference of the value in the memory. when we assign an array, object or function to a variable, we are actually storing the reference of the value in the variable. that's why when we change the value of the array, object or function, it will change the value of the variable as well.
 
+//=====================================================================================
+
+//memory 
+//there are two types of memory in javascript: stack and heap. stack is used to store primitive datatypes and heap is used to store non-primitive datatypes. when we assign a primitive datatype to a variable, it will be stored in the stack memory. when we assign a non-primitive datatype to a variable, it will be stored in the heap memory and the reference of the value will be stored in the stack memory. that's why when we change the value of the non-primitive datatype, it will change the value of the variable as well.
+
+
+let myName="mayank"; //primitive datatype
+let anotherName=myName; //primitive datatype
+anotherName="Peswani";
+
+console.log(myName); //mayank
+console.log(anotherName);//peswani
+
+let userOne={
+    email:"mayank@gmail.com",
+    upi:"mayank@ybl"
+}
+
+let userTwo=userOne; //non-primitive datatype
+
+userTwo.email="peswani@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
