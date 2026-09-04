@@ -1,0 +1,39 @@
+//in this file we will learn about numbers
+
+const score=400;
+console.log(score); //400
+
+const balance=new Number(100); //number object
+//console.log(balance); //Number {100}
+
+// console.log(balance.toString()); //100 
+// console.log(balance.toString().length);//
+
+// console.log(balance.toFixed(2)); //100.00
+
+const balance1=23.8966;
+console.log(balance1.toPrecision(2)); 
+
+
+const balance2=1000000;
+console.log(balance2.toLocaleString("en-IN")); //10,00,000
+
+//by default it will give the output in en-US format. if we want to change the format then we can use toLocaleString() method and pass the locale as a parameter. for example if we want to get the output in Indian format then we can pass "en-IN" as a parameter.
+
+//********************MATHS******************** */
+// console.log(MATH); //Math {…}
+// console.log(Math.PI); //3.141592653589793
+// console.log(Math.round(4.7)); //5
+// console.log(MATH.round(4.3)); //4
+// console.log(Math.floor(4.7)); //4
+// console.log(Math.ceil(4.7)); //5
+// console.log(MATH.abs(-4));
+
+// console.log(Math.sqrt(64)); //8
+// console.log(Math.pow(2,3)); //8
+// console.log(Math.min(2,3,4,5,6));//2
+// console.log(Math.max(2,3,4,5,6));//6
+
+console.log(Math.random()); //it will give random number between 0 and 1. it will not include 1. it will include 0. for example if we get 0.9999999999999999 then it will be included but if we get 1 then it will not be included.
+
+console.log(Math.random()*10); //it will give random number between 0 and 10. it will not include 10. it will include 0. for example if we get 9.999999999999999 then it will be included but if we get 10 then it will not be included.
