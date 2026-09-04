@@ -1,0 +1,30 @@
+//in this file we will add all the operations related assertions
+
+let str1="hello";
+let str2=" mayank";
+let str3=str1+str2;
+//console.log(str3); //hello mayank
+
+// console.log("1" + 2); //12
+// console.log(1 + "2"); //12
+// console.log("1" + 2 + 2); //122
+// console.log(1 + 2 + "2"); //32
+
+console.log(true);//true
+console.log(+true); //1
+
+let gameCounter=100;
+gameCounter++;
+console.log(gameCounter); //101
+
+let gameCounter1=100;
+gameCounter1--;
+console.log(gameCounter1); //99
+
+let gameCounter2=100;
+++gameCounter2;
+console.log(gameCounter2); //101
+
+let gameCounter3=100;
+--gameCounter3;
+console.log(gameCounter3); //99
