@@ -1,0 +1,43 @@
+//in this file we are going to learn about strings
+
+const name1="mayank";
+
+const name2="peswani";
+console.log(name1+name2); //mayankpeswani
+console.log(name1+" "+name2); //mayank peswani
+//we can also use template literals to concatenate strings. template literals are enclosed by backticks(`) instead of single or double quotes. we can use ${} to insert variables in the string.
+
+console.log(`my name is ${name1} and my last name is ${name2}`); //my name is mayank and my last name is peswani
+
+//method 2 declare string
+
+//const name3=new String("mayank"); //string object
+
+// console.log(name3); //String {"mayank"}
+
+// console.log(typeof name3); //object
+
+// console.log(name3.toUpperCase()); //MAYANK
+// console.log(name3.toLowerCase()); //mayank
+// console.log(name3.length); //6
+// console.log(name3[0]); //m
+
+// console.log(name3.charAt(0)); //m
+// console.log(name3.indexOf("a")); //1
+// console.log(name3.lastIndexOf("a")); //4
+
+
+const name4="mayank-peswani";
+const newString=name4.substring(0,4); //here last character will not include  in this we cannot give negative value. if we give negative value then it will return empty string.
+console.log(newString);
+
+const newString1=name4.slice(0,4); //here last character will not include
+//slice method m apn negative value bi daal skte h negative k case m wo reverse m count krta h. for example agar apn -1 daalte h to wo last character ko represent krta h. -2 second last character ko represent krta h and so on.
+console.log(newString1);
+
+const name6=" mayank-peswani  ";
+console.log(name6.trim())//The trim() method is used to remove leading (starting) and trailing (ending) whitespace characters from a string.
+
+console.log(name6.replace('-','*'));
+
+console.log(name6.split('-'))
