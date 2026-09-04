@@ -56,4 +56,4 @@ console.log(undefined>0); //false
 console.log(undefined<0); //false
 console.log(undefined==0); //false
 
-//strict check: it will check the value and the datatype of the variable. if both are same then it will return true otherwise false
+//strict check(===): it will check the value and the datatype of the variable. if both are same then it will return true otherwise false 
