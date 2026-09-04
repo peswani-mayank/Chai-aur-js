@@ -1,0 +1,124 @@
+//in this file we will cover objects
+
+//there are two ways to declare an objects
+//1.literal ki tarah
+//2. constructtor ki tarah
+
+//singleton: agar jb constructor s bnate h to wo sigleton object bnta h 
+
+
+//object literals
+//object k andar keys or value hoti h
+
+const mySym=Symbol("key1");
+
+const user={
+    name:"mayank",
+    "full name":"mayank Peswani",
+    [mySym]:"myKey1",
+    age:21,
+    email:"mayank@gmail.com",
+    location:"jaipur",
+    isLoggedIn:false,
+    lastLoginDays:["Monday","saturday"]
+}
+//method 1 to access object elements
+//console.log(user.name); //agar ese kr rhe h to name ko double quotes m lene ki need nhi h 
+
+//method 2
+//console.log(user["name"]); //agar ese kr rhe h to name ko double quote m lena pdega
+
+//ab agar merko full name ko access lena h to usko m method 1 s nhi access kr skta hu kyuki wo nhi ho payega wo method 2 s access ho payega isliye method 2 shi way h object k element ko access krne ka
+
+//console.log(user["full name"]);
+//ab merko symbol ko access krna h 
+
+//console.log(user.mySym) //ese symbol ko nhi kr skte h access because agar ese access krege to iska type string rahega but mujhe symbol ka type ka chahiye
+
+
+//console.log( user[mySym]);
+
+//now here we will learn how to change valuues of object
+
+user.email="peswani@gmail.com"
+//console.log(user["email"])
+
+//we can freeze our object
+//Object.freeze(user);
+user.email="peswani123@gmail.com";//this will not print because we freeze our object after we are changing the email
+//console.log(user["email"])
+
+// user.greeting=function(){
+//     console.log("hello js user")
+// }
+// console.log(user.greeting())
+
+// user.greeting=function(){
+//     console.log(`hello js user ${this.name}`)
+// }
+// console.log(user.greeting())
+
+
+//object by constructor
+
+// const tinderUser=new Object() //it is empty objectand it is singleton object
+// console.log(tinderUser);
+
+//method 2
+const tinderUser={}
+tinderUser.id="123abc"
+tinderUser.name="mayank"
+tinderUser.isLoggedIn=false
+//console.log(tinderUser)//it is also empty object and it is non singleton object
+
+
+//nested object
+const regularUser={
+    email:"mayank@gmail.com",
+    fullname:{
+        userfullname:{
+            firstname:"mayank",
+            lastname:"peswani"
+        }
+    }
+}
+
+
+//console.log(regularUser.fullname.userfullname.firstname)
+
+//console.log(regularUser.fullname?.userfullname.firstname) //idr question mark isliye lgaya h agar firname h to continue kro nhi to nhi krna h it means we need to use if else
+
+const obj1={1:"a",2:"b"};
+const obj2={3:"c",4:"d"};
+//const obj3={obj1,obj2};
+//console.log(obj3);//ismeobject k andar object aajyega jese aaray m push method use krne pr hua tha 
+//{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
+
+
+const obj3=Object.assign({},obj1,obj2) //the empty {} object in the starting is the new object where all properties will be copied.or apn ese maan skte hh jo empty object h wo target object h or baaki jo h jeseobj1 or obj2 wo source object h apn ko obj1 or obj2 target object m copy krne h 
+console.log(obj3);
+
+//another method to merge object is spread method like array
+
+const obj4={...obj1,...obj2}
+console.log(obj4);
+
+//array of object
+
+const user123=[
+    {
+        id:1,
+        email:"mayank@gmail.com"
+    }
+]
+console.log(user123[0])
+console.log(user123[0].email)
+
+console.log(tinderUser)
+
+console.log(Object.keys(tinderUser)) //here we will get keys of tinderUser object
+console.log(Object.values(tinderUser)) //here we will get values of tinderUser
+
+console.log(Object.entries(tinderUser))//isme object ki har key value pair ko array m bna diya jata h [ [ 'id', '123abc' ], [ 'name', 'mayank' ], [ 'isLoggedIn', false ] ]
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')) //isme apn ye check kr skte h ye property object m h ya nhi h ye boolean output dega
