@@ -10,21 +10,50 @@ let str3=str1+str2;
 // console.log("1" + 2 + 2); //122
 // console.log(1 + 2 + "2"); //32
 
-console.log(true);//true
-console.log(+true); //1
+//console.log(true);//true
+//console.log(+true); //1
 
 let gameCounter=100;
 gameCounter++;
-console.log(gameCounter); //101
+//console.log(gameCounter); //101
 
 let gameCounter1=100;
 gameCounter1--;
-console.log(gameCounter1); //99
+//console.log(gameCounter1); //99
 
 let gameCounter2=100;
 ++gameCounter2;
-console.log(gameCounter2); //101
+//console.log(gameCounter2); //101
 
 let gameCounter3=100;
 --gameCounter3;
-console.log(gameCounter3); //99
+//console.log(gameCounter3); //99
+
+
+
+//comparison operators: we can compare two values using comparison operators. it will return a boolean value true or false
+
+let num1=10;
+let num2=20;
+// console.log(num1>num2); //false
+// console.log(num1<num2); //true
+// console.log(num1>=num2); //false
+// console.log(num1<=num2); //true
+
+
+console.log("2">1); //true
+console.log("02"<1); //false
+
+console.log(nul>0); //false
+console.log(nul==0); //false
+consoqle.log(nul>=0); //true
+
+//the reason is that equality check == and comparisons > < >= <= work differently.
+//comparisons convert null to a number tretaing it as 0;
+//that's why (3) null>=0 is true and (1) null>0 is false 
+
+console.log(undefined>0); //false
+console.log(undefined<0); //false
+console.log(undefined==0); //false
+
+//strict check: it will check the value and the datatype of the variable. if both are same then it will return true otherwise false
