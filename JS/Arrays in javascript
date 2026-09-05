@@ -1,4 +1,6 @@
 //in this file we will learn about arrays
+//let's start
+
 //array is a non-primitive datatype in javascript. it is also called reference datatype because it stores the reference of the value in the memory. when we assign an array to a variable, we are actually storing the reference of the value in the variable. that's why when we change the value of the array, it will change the value of the variable as well.   
 
 //array: collection of similar or different datatypes. it is a non-primitive datatype in javascript. it is also called reference datatype because it stores the reference of the value in the memory. when we assign an array to a variable, we are actually storing the reference of the value in the variable. that's why when we change the value of the array, it will change the value of the variable as well.
