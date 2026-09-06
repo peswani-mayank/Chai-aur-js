@@ -1,5 +1,5 @@
-
-//in this file we will study about variables in javascript
+ 
+//in this file we are going to study about variables in javascript
  const accountId = 12345; //number
  //const: we cannot redeclare and cannot reassign the value of a const variable
  let accountEmail="mayank@gmail.com"; //string
