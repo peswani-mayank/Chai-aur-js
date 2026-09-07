@@ -11,7 +11,6 @@
 //object k andar keys or value hoti h
 
 const mySym=Symbol("key1");
-
 const user={
     name:"mayank",
     "full name":"mayank Peswani",
@@ -33,10 +32,9 @@ const user={
 //console.log(user["full name"]);
 //ab merko symbol ko access krna h 
 
-//console.log(user.mySym) //ese symbol ko nhi kr skte h access because agar ese access krege to iska type string rahega but mujhe symbol ka type ka chahiye
+//console.log(user.mySym) 
 
-
-//console.log( user[mySym]);
+//console.log( user[mySym]);//best way to access symbol
 
 //now here we will learn how to change valuues of object
 
@@ -61,7 +59,7 @@ user.email="peswani123@gmail.com";//this will not print because we freeze our ob
 
 //object by constructor
 
-// const tinderUser=new Object() //it is empty objectand it is singleton object
+// const tinderUser=new Object() //it is empty object and it is singleton object
 // console.log(tinderUser);
 
 //method 2
@@ -91,11 +89,11 @@ const regularUser={
 const obj1={1:"a",2:"b"};
 const obj2={3:"c",4:"d"};
 //const obj3={obj1,obj2};
-//console.log(obj3);//ismeobject k andar object aajyega jese aaray m push method use krne pr hua tha 
+//console.log(obj3);//isme object k andar object aajyega jese aaray m push method use krne pr hua tha 
 //{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
 
 
-const obj3=Object.assign({},obj1,obj2) //the empty {} object in the starting is the new object where all properties will be copied.or apn ese maan skte hh jo empty object h wo target object h or baaki jo h jeseobj1 or obj2 wo source object h apn ko obj1 or obj2 target object m copy krne h 
+const obj3=Object.assign({},obj1,obj2) //the empty {} object in the starting is the new object where all properties will be copied.or apn ese maan skte hh jo empty object h wo target object h or baaki jo h jese obj1 or obj2 wo source object h apn ko obj1 or obj2 target object m copy krne h 
 console.log(obj3);
 
 //another method to merge object is spread method like array
