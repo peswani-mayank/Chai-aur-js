@@ -1,4 +1,4 @@
-//in this file we are going to learn about all the operations
+//in this file we will add all the operations related assertions
 
 let str1="hello";
 let str2=" mayank";
@@ -44,9 +44,10 @@ let num2=20;
 console.log("2">1); //true
 console.log("02"<1); //false
 
-console.log(nul>0); //false
-console.log(nul==0); //false
-consoqle.log(nul>=0); //true
+console.log(null>0); //false
+console.log(null==0); //false:
+//null == 0 is false because == has a special rule: null is only loosely equal to undefined, not to 0 or other values.
+console.log(null>=0); //true
 
 //the reason is that equality check == and comparisons > < >= <= work differently.
 //comparisons convert null to a number tretaing it as 0;
@@ -57,3 +58,5 @@ console.log(undefined<0); //false
 console.log(undefined==0); //false
 
 //strict check(===): it will check the value and the datatype of the variable. if both are same then it will return true otherwise false 
+
+
