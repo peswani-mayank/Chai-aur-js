@@ -6,7 +6,7 @@
  function add(number1,number2){ //jb function ki defination bnate h to us time jo variables pass krte h use parameters bolte h 
     console.log(number1+number2);
  }
- //add(2,3) //or jb function ko call krte h us time values  paa krte h usko argument bolte h 
+ //add(2,3) //or jb function ko call krte h us time values  pass krte h usko argument bolte h 
 
 
  //const result=add(2,3)
