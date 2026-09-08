@@ -40,7 +40,7 @@ let num2=20;
 // console.log(num1>=num2); //false
 // console.log(num1<=num2); //true
 
-
+//For mathematical comparisons: JavaScript often converts the string number → actual number.
 console.log("2">1); //true
 console.log("02"<1); //false
 
