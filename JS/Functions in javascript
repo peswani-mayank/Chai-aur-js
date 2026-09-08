@@ -1,0 +1,63 @@
+ function SayMyName(){
+    console.log("Mayank")
+ }
+ //SayMyName()
+
+ function add(number1,number2){ //jb function ki defination bnate h to us time jo variables pass krte h use parameters bolte h 
+    console.log(number1+number2);
+ }
+ //add(2,3) //or jb function ko call krte h us time values  paa krte h usko argument bolte h 
+
+
+ //const result=add(2,3)
+ //console.log("Result: ",result)//Result:  undefined
+ //console.log() only displays a value, while return sends a value back from a function. If a function has no return, it returns undefined by default.
+
+
+ //console.log("Result: ",result): agar merko ese print krwana h to merko function m console ki jagah pr return use krna pdega
+
+ function add1(number1,number2){
+    return number1+number2;
+    console.log("mayank") // ek baar agar return use krliya to uske baad jo bi hoga wo print nhi hoga agar jo bi print krwana h wo return k uper hi use krege last m return statement aayega
+ }
+ const result1=add1(2,3);
+ console.log("Result1: ",result1); //Result1:  5
+
+
+ function username(name){
+    return `${name} just logged in`;
+ }
+ //console.log(username("mayank"))
+
+ //console.log(username()) //agar isme kuch argument pass nhi krte h to wo undefined print hokr console m aayega
+  //undefined just logged in
+
+
+
+// function loginUserName(name1){
+//     if(name1===undefined){
+//         console.log("Please enter the name")
+//         return
+//     }
+//     return `${name1} just logged in`
+// }
+// console.log(loginUserName())
+
+//output:
+//Please enter the name
+//undefined
+
+function loginUserName(name1="mayank"){
+    if(name1===undefined){
+        console.log("Please enter the name")
+        return
+    }
+    return `${name1} just logged in`
+}
+//console.log(loginUserName())
+
+//ab is case undefined nhi hoga because apn n uper value initialise krdi h minimum s minimum bi value jo hogi wo mayank hogi undefined to nhi hogi agar apn argument m pass nhi kre tab bi
+
+//console.log(loginUserName("peswani"))
+
+//or agar apn argument pass krdete h to value override ho jyegi or jo argumenet m value pass hogi wo print hokr aayegi
