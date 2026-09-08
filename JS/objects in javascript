@@ -94,12 +94,12 @@ const obj2={3:"c",4:"d"};
 
 
 const obj3=Object.assign({},obj1,obj2) //the empty {} object in the starting is the new object where all properties will be copied.or apn ese maan skte hh jo empty object h wo target object h or baaki jo h jese obj1 or obj2 wo source object h apn ko obj1 or obj2 target object m copy krne h 
-console.log(obj3);
+//console.log(obj3);
 
 //another method to merge object is spread method like array
 
 const obj4={...obj1,...obj2}
-console.log(obj4);
+//console.log(obj4);
 
 //array of object
 
@@ -109,14 +109,37 @@ const user123=[
         email:"mayank@gmail.com"
     }
 ]
-console.log(user123[0])
-console.log(user123[0].email)
+// console.log(user123[0])
+// console.log(user123[0].email)
 
-console.log(tinderUser)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser)) //here we will get keys of tinderUser object
-console.log(Object.values(tinderUser)) //here we will get values of tinderUser
+// console.log(Object.keys(tinderUser)) //here we will get keys of tinderUser object
+// console.log(Object.values(tinderUser)) //here we will get values of tinderUser
 
-console.log(Object.entries(tinderUser))//isme object ki har key value pair ko array m bna diya jata h [ [ 'id', '123abc' ], [ 'name', 'mayank' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.entries(tinderUser))//isme object ki har key value pair ko array m bna diya jata h [ [ 'id', '123abc' ], [ 'name', 'mayank' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')) //isme apn ye check kr skte h ye property object m h ya nhi h ye boolean output dega
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')) //isme apn ye check kr skte h ye property object m h ya nhi h ye boolean output dega
+
+
+//Destructuring of object
+
+const course={
+    coursename:"Javascript",
+    price:"999",
+    Instructor:"Hitesh"
+}
+
+//console.log(course.coursename) agr ye access krna h to mujhe or variable k liye bi esa krna pdega means mujhe 3 baar esa krna pdega isliye object destructuring ki need pdti h 
+
+const {Instructor,price}=course
+console.log(Instructor, price)
+
+//JSON(javascript object notation)
+//api s jb bi data fetch krege wo json ki format m hi milega 
+// {
+//     "name1": "mayank",
+//     "coursename": "javascript123",
+//     "price": "free"
+// }
+
