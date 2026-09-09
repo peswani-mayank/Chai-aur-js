@@ -1,0 +1,58 @@
+//in this we are going to learn about scopes
+
+//jo bi if k andr likha h usko block scope bolte h or is se bhar jo bi h wo h global scope
+ if(true){
+    let a=10;
+    const b=20;
+    var c=30;
+ }
+
+ //console.log(a) //ReferenceError: a is not defined
+ //console.log(b)  //ReferenceError: b is not defined
+ //console.log(c) // 30
+
+ //yehi problem h  var m  agar yehi same variable var m koi or developer bi declare krde to dusre scope m to ye condusion create krega ye block scoope nhi h usliye isko avvoid krte h usse krne k liye
+
+ //here we learn about nested scope
+
+ function one(){
+    const username="mayank";
+    function two(){
+        const website="youtube";
+        console.log(username)
+    }
+    //console.log(website) idr apn two wale function ko access nhi kr skte h isko apn ese smj skte h ki parent function child function ko access nhi kr skta h but child function parents function ko access kr skta h isliye website ko apn function two s bhar access nhi kr paye
+    two()
+   
+
+ }
+ one()
+
+
+ if(true){
+    const username1="mayank"
+    if(username1==="mayank"){
+        const website=" youtube"
+        console.log(username1+website) //ye kam krega because username1 parents if scope m declare h to child scope parents scope s variable access kr skta h or website variable waise hi child if scope m declare ho hi rkha h
+    }
+    //console.log(website) //ye bi error show krega becaussee website vaariable child if scope m declare ho rkha h to isko apn parent scope m access nhi kr skte h
+ }
+ //console.log(username1) ye error show krega because ye scope s bhar h
+
+
+
+ //+++++++++++++++++++++++++++++++++  interesting     
+ // ++++++++++++++++
+
+//console.log(addone(5)) //iss tpe m function ko declare krne s phele apn function ko call kr skte h jese isme apn n kr rkha h or function ko declare krne k baad bi call kr skte h
+ function addone(value){
+    return value+1;
+ }
+ //console.log(addone(5))
+
+ //or iss type s function declare krte h agar to apn function ko call nhi kr skte h declare krne s phele ye error show krege ReferenceError: Cannot access 'addtwo' before initialization
+ //console.log(addtwo(3))///error if we declare function in this format
+ const addtwo=function(value1){
+    return value1+2
+ }
+ //console.log(addtwo(3))
