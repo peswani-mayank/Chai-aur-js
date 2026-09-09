@@ -11,6 +11,8 @@
 
  //const result=add(2,3)
  //console.log("Result: ",result)//Result:  undefined
+ 
+ 
  //console.log() only displays a value, while return sends a value back from a function. If a function has no return, it returns undefined by default.
 
 
@@ -21,7 +23,7 @@
     console.log("mayank") // ek baar agar return use krliya to uske baad jo bi hoga wo print nhi hoga agar jo bi print krwana h wo return k uper hi use krege last m return statement aayega
  }
  const result1=add1(2,3);
- console.log("Result1: ",result1); //Result1:  5
+ //console.log("Result1: ",result1); //Result1:  5
 
 
  function username(name){
@@ -61,3 +63,55 @@ function loginUserName(name1="mayank"){
 //console.log(loginUserName("peswani"))
 
 //or agar apn argument pass krdete h to value override ho jyegi or jo argumenet m value pass hogi wo print hokr aayegi
+
+
+//idr ye learn kr rhe h function m or kis tarah s parameter pass kr skte h 
+//method 1: example shopping cart ka lete h jese jb koi user products ko jb add to cart krta h to wo apn ko pta nhi h ki kitne product usne cart m rkh rkhe h
+function calculateCartPrice(num1){
+   return num1;
+}
+//console.log(calculateCartPrice(2))
+//  //ab idr ek argument pass kiya to wo print hokr aagya but iski jagah multiple argument ho to fr kese krege wo sikhe ge apn aj 
+
+//iske liye ek rest operator hota h wo use krege 
+function calculateCartPrice1(...num1){ //in 3 dots ko hi rest operator bolte h or iska mtlb hota h ki apn ko chije m khule m mil rhi h isliye un sb ko pack kro ek sath print krdo wo array bnkr print ho jyega
+
+   return num1;
+}
+//console.log(calculateCartPrice1(200,300,400));//[ 200, 300, 400 ] //\\ idr argument m kitni bi values pass kr skte h
+
+//ab ek dusri chij or sikhte h 
+ function CalculateCartPrice2(val1,val2,...num2){
+   //return val1 output: 200
+   //return val2 output: 300
+   //return num2 output:[ 400, 500 ]
+ }
+ //console.log(CalculateCartPrice2(200,300,400,500));//idr ye hoga [ 400, 500 ] because apn n parameter m val1, val2 pass kiya h to 200 h wo val1 m jyega or 300 val2 m jyega or jo bache h 400, 500 wo rest operator m num2 m jyege or wo array bnkr print ho jyege 
+
+
+ //now here we are going to learn how passs object in the function
+const user={
+   name1:"mayank",
+   age:20
+};
+
+function handleObject(anyobject){ //idr parameter m koi bi obeject ka name likh skte h 
+   console.log(`username is ${anyobject.name1} and age is ${anyobject.age}`) 
+}
+
+//handleObject(user) //method 1
+
+handleObject({ //method 2 apn directly argument m object bi pass kr skte h
+   name1:"mayank",
+   age:20
+
+})
+
+
+//here we are going to learn how to pass array in function
+
+const myArray=[1,2,3,4,5]
+function returnSecondvalue(getArray){ //idr bi parameter m koi bi name de skte h array ka
+   return getArray[1];
+}
+console.log(returnSecondvalue(myArray)) //idr argumenet jo bi array apn ne le rkha h uska name pass krna h
