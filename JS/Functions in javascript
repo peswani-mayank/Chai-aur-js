@@ -10,7 +10,7 @@
 
 
  //const result=add(2,3)
- //console.log("Result: ",result)//Result:  undefined
+ //console.log("Result: ",result)//Result:  undefined..
  
  
  //console.log() only displays a value, while return sends a value back from a function. If a function has no return, it returns undefined by default.
