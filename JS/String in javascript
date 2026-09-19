@@ -1,6 +1,6 @@
 //in this file we are going to learn about string
 
-const name1="mayank";
+const name1="mayank";;
 
 const name2="peswani";
 console.log(name1+name2); //mayankpeswani
