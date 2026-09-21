@@ -1,6 +1,6 @@
  
 //in this file we are going to study about variables in javascript
- const accountId = 12345; //number
+ const accountId = 12345; ////number
  //const: we cannot redeclare and cannot reassign the value of a const variable
  let accountEmail="mayank@gmail.com"; //string
  //let: we can reassign the value of a let variable but cannot redeclare it
