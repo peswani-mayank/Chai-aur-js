@@ -1,8 +1,8 @@
 //in this file we will cover objects
 
 //there are two ways to declare an objects
-//1.literal ki tarah
-//2. constructtor ki tarah
+//1.literal ki tarah.
+//2. constructtor ki tarah.
 
 //singleton: agar jb constructor s bnate h to wo sigleton object bnta h 
 
